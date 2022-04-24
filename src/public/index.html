@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">E-Commerce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button class="btn btn-secondary" id="isAdmin">No es Admin</button>
+
+    <div class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle"id="navbarDropdownMenuLink">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu" id="dropdown">
+      </div>
+    </div>
+  </nav>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-8 mr-auto ml-auto">
+        <form action="/" class="form-group" id="formularioProducto">
+          <h1 class="text-center">Formulario</h1>
+          <label class="col-form-label" for="nombre">Producto</label>
+          <input type="text" id="nombre" class="form-control" name="nombre" placeholder="Nombre del producto">
+
+          <label class="col-form-label" for="descripcion">Descripcion</label>
+          <input type="text" id="descripcion" class="form-control" name="descripcion" placeholder="Descripción del producto">
+
+          <label class="col-form-label" for="codigo">Codigo</label>
+          <input type="text" id="codigo" class="form-control" name="codigo" placeholder="Código del producto">
+
+          <label class="col-form-label" for="precio">Precio</label>
+          <input type="number" id="precio" class="form-control" name="precio" placeholder="Precio del producto">
+
+          <label class="col-form-label" for="stock">Stock</label>
+          <input type="number" id="stock" class="form-control" name="stock" placeholder="Cantidad de stock">
+
+          <label class="col-form-label" for="foto">Imagen</label>
+          <input type="text" id="foto" class="form-control" name="foto" placeholder="URL de la imagen">
+          <div class="col-md-12 text-center" id="btnForm">
+            <input class="btn btn-primary mt-4 align-content-center" value="Enviar" id="enviar">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 mt-5 mr-auto ml-auto">
+        <h2 class="text-center">Productos</h2>
+        <div id="productos" class="d-flex justify-content-center flex-row flex-wrap"></div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

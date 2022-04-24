@@ -1,0 +1,11 @@
+.block{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+#navbarDropdownMenuLink{
+  cursor: pointer;
+}
